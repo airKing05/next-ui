@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import phoneImg from './images/phone2.png';
-import mailImg from './images/mail.png';
-import addressImg from './images/address.png';
+import phoneImg from './../images/phone2.png';
+import mailImg from './../images/mail.png';
+import addressImg from './../images/address.png';
 
 export default function Contact() {
     return (
@@ -12,7 +12,8 @@ export default function Contact() {
                     <div className="col col-lg-3 col-12 py-2 sm-cont">
                         <div className="row d-flex align-items-center">
                             <div className="col-3 d-flex justify-content-center">
-                                <img className="sm-img-icon" src={phoneImg} alt="phone-img" />
+                                {/* <img className="sm-img-icon" src="https://th.bing.com/th/id/OIP.SZrS9y30XLDDV8E4I3XJnAHaJ-?pid=ImgDet&rs=1" alt="phone-img" /> */}
+                                <Image className="sm-img-icon" src={phoneImg}/>
                             </div>
                             <div className="col-9 sm-col">
                                 <span className="h7 d-block">Phone</span>
@@ -23,7 +24,7 @@ export default function Contact() {
                     <div className="col col-lg-3 col-12 py-2 sm-cont">
                         <div className="row d-flex align-items-center">
                             <div className="col-3 d-flex justify-content-center">
-                                <img className="sm-img-icon" src={mailImg} alt="mail-img" />
+                                <Image className="sm-img-icon" src={mailImg} alt="mail-img" />
                             </div>
                             <div className="col-9 sm-col">
                                 <span className="h7 d-block">Mail</span>
@@ -34,7 +35,7 @@ export default function Contact() {
                     <div className="col col-lg-3 col-12 py-2 sm-cont">
                         <div className="row d-flex align-items-center">
                             <div className="col-xl-2 col-3 d-flex justify-content-center">
-                                <img className="sm-img-icon" src={addressImg} alt="address-img" />
+                                <Image className="sm-img-icon" src={addressImg} alt="address-img" />
                             </div>
                             <div className="col-xl-10 col-9 sm-col">
                                 <h6 className="h7 d-block">Address</h6>

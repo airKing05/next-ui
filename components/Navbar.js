@@ -32,7 +32,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <Link href="/contact">
-                <a className="nav-link active" aria-current="page" >Contact us</a>
+                <a className="nav-link">Contact us</a>
                 </Link>
               </li>
               <li className="nav-item">

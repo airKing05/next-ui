@@ -52,3 +52,74 @@ a {
   float: left;
   box-sizing: border-box;
 } */
+
+/* contact page css pickup form the user data 123 */
+.cont{
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px #000;
+}
+.h2{
+  font-weight: 700;
+  color: rgb(119, 119, 250);
+}
+.sm-cont{
+  background: #fff;
+  box-shadow: 0px 0px 5px 0px #000;
+  margin-bottom: 10px;
+}
+.sm-img-icon{
+  width: 40px;
+  height: auto;
+}
+.sm-col{
+  padding-right: 0px !important;
+ 
+}
+.h7{
+  font-weight: 500;
+}
+
+
+/* weather section */
+
+.w-bg{
+  background-image:url(https://bit.ly/314H0tM);
+  background-size: cover;
+  height: 100vh;
+}
+.w-heading-1{
+  font-size: 30px;
+  font-weight: 700;
+  
+}
+.w-heading-4{
+  font-size: 20px;
+  font-weight: 600;
+}
+.w-heading-5{
+  font-size: 17px;
+  font-weight: 600;
+}
+.w-text-3{
+  font-size: 18px;
+  font-weight: 900;
+}
+.w-text-6{
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* weather carousal setting */
+.slick-arrow, .slick-next, .slick-prev{
+  display: none !important;
+}
+
+/* Accordion  */
+.accordion-button:not(.collapsed)::after {
+  content: none;
+}
+.accordion-button::after {
+  content: none;
+  
+}

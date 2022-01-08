@@ -12,7 +12,7 @@ export default function ThemeButton() {
     return (
         <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles/>
-      <button className="btn btn-outline-danger" onClick={themeToggler}>Switch Theme</button>   
+      <button className="btn btn-outline-danger" onClick={themeToggler}>Switch theme</button>   
       </ThemeProvider>
     )
 }

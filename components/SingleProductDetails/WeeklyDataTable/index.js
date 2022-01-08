@@ -1,35 +1,9 @@
+import React from 'react'
 
-import ImagesCarousel from './ImagesCarousel'
-
-import React from 'react';
-// import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-
-
-
-
-export default function SingleProductDetails() {
-    const settings = {
-        dots: false,
-        infinite: true,
-        autoplaySpeed: 1000,
-        autoplay: true,
-        slidesToShow: 3,
-        slidesToScroll: 1
-    };
+export default function index() {
     return (
-        <div className=" container mt-5" style={{ paddingLeft: '0px' }}>
-
-            <div>this will be a Image slider</div>
-            <ImagesCarousel />
-            <div>graphical analysis of 7 days</div>
-            <div>slider for every month price</div>
-
-            <h2 className="tsn-heading-1 text-center">Laster Wheat</h2>
-
-            <div className="text-center">
+        <div>
+            <div className="text-center table-responsive-sm">
                 <table className='table table-dark table-striped'>
                     <thead>
                         <tr>
@@ -45,7 +19,7 @@ export default function SingleProductDetails() {
                         <tr>
                             <td>24-12-2021, Thursday</td>
                             <td>1670</td>
-                            <td>1810jhfvjkdfv</td>
+                            <td>1810</td>
                         </tr>
                         <tr>
                             <td>25-12-2021, Friday</td>
@@ -82,34 +56,6 @@ export default function SingleProductDetails() {
                 </table>
             </div>
 
-            {/* <Slider {...settings}>
-                <div style={{border: '2px solid black', padding: '40px 40px'}}>
-                    this ljkzdfnvlkzdf. zdlf
-                </div>
-                <div>
-                    this ljkzdfnvlkzdf. zdlf
-                </div>
-                <div>
-                    this ljkzdfnvlkzdf. zdlf
-                </div>
-                <div>
-                    this ljkzdfnvlkzdf. zdlf
-                </div>
-               
-              
-            </Slider> */}
-
-            {/* <Slider {...settings2}>
-                <div>
-                    <TrySNCard />
-                </div>
-                <div>
-                    <TrySNCard />
-                </div>
-                <div>
-                    <TrySNCard />
-                </div>
-            </Slider> */}
         </div>
     )
 }
