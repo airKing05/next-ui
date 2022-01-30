@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Brand</title>
+        <title>Dekho Krashak</title>
         <meta name="google" content="nositelinkssearchbox" />
       </Head>
       <Navbar />
