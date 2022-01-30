@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo2 from '../../images/logo-2.png';
-import Mail from './../../images/mail.png'
+
 
 const Footer = () => {
     return (
@@ -16,30 +16,30 @@ const Footer = () => {
                         <h5 className="" style={{ paddingLeft: '45px' }}>Let's change the future of farmers</h5>
                     </div>
                     <div className="row">
-                    <hr style={{margin: '0px', width: '84%',}}/>
+                        <hr style={{ margin: '0px', width: '84%', }} />
                     </div>
-                    
+
                 </div>
                 <div className="col-3">
                     <h5 className="">Links</h5>
                     <div className="row">
                         <Link href='/contact'>
-                        <a>
-                        <label  style={{fontSize: '18px'}}>
-                                 <i class="fas fa-angle-double-right"></i>
+                            <a>
+                                <label style={{ fontSize: '18px' }}>
+                                    <i class="fas fa-angle-double-right"></i>
                                 </label>
-                                <span className="" style={{paddingLeft: '10px', fontSize: '18px'}}>Contact us</span> 
-                        </a>
+                                <span className="" style={{ paddingLeft: '10px', fontSize: '18px' }}>Contact us</span>
+                            </a>
                         </Link>
                     </div>
                     <div className="row">
                         <Link href='/contact'>
-                        <a>
-                        <label  style={{fontSize: '18px'}}>
-                                 <i class="fas fa-angle-double-right"></i>
+                            <a>
+                                <label style={{ fontSize: '18px' }}>
+                                    <i class="fas fa-angle-double-right"></i>
                                 </label>
-                                <span className="" style={{paddingLeft: '10px', fontSize: '18px'}}>Term &#x26; Condition</span> 
-                        </a>
+                                <span className="" style={{ paddingLeft: '10px', fontSize: '18px' }}>Term &#x26; Condition</span>
+                            </a>
                         </Link>
                     </div>
                 </div>
@@ -47,21 +47,21 @@ const Footer = () => {
                     <div className="row pb-1" >
                         <Link href="https://facebook.com">
                             <a className="">
-                                <label  style={{fontSize: '25px', color: 'blue'}}>
+                                <label style={{ fontSize: '25px', color: 'blue' }}>
                                     <i class="fab fa-facebook align-middle "></i>
                                 </label>
-                                <span className="" style={{paddingLeft: '10px', fontSize: '18px'}}>facebook</span>
+                                <span className="" style={{ paddingLeft: '10px', fontSize: '18px' }}>facebook</span>
                             </a>
                         </Link>
                     </div>
-                    <hr style={{margin: '0px', width: '60%'}}/>
+                    <hr style={{ margin: '0px', width: '60%' }} />
                     <div className="row" >
                         <Link href="https://instagram.com">
                             <a className="">
-                                <label  style={{fontSize: '25px', color: 'blue'}}>
-                                <i class="fab fa-instagram align-middle "></i>
+                                <label style={{ fontSize: '25px', color: 'blue' }}>
+                                    <i class="fab fa-instagram align-middle "></i>
                                 </label>
-                                <span className="" style={{paddingLeft: '10px', fontSize: '18px'}}>Instagram</span>
+                                <span className="" style={{ paddingLeft: '10px', fontSize: '18px' }}>Instagram</span>
                             </a>
                         </Link>
                     </div>
