@@ -1,11 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import Carousal from './carousal';
+import InfoData from './InfoData';
+import TimeToChange from './TimetoChange';
 
 const HomePage = () => {
     return (
         <>
           <Carousal/>
+          <InfoData/>
+          <TimeToChange/>
             {/* <div className="container mt-5 text-center" style={{maxWidth: '100%', background: '#555555' }}>
                 
                 <Image src="https://cdn.pixabay.com/photo/2014/09/09/19/07/corn-field-440338_960_720.jpg" width="500" height="300"></Image>

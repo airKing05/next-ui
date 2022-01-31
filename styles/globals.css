@@ -111,9 +111,46 @@ a {
   font-weight: 800;
 }
 
+
+/* home page css */
+.h1-heading-1{
+  font-size: 50px;
+  font-weight: 900;
+}
+.h1-heading-3{
+  font-size: 30px;
+  font-weight: 900;
+}
+.h1-heading-4{
+  font-size: 25px;
+  font-weight: 900;
+}
+.h1-heading-6{
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.p-text-4{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* color code css */
+.color-1{
+  color: #ed743e;
+}
+.color-2{
+  color:  #646a7c;
+}
+.color-21{
+  color:  #42435d;
+}
+
+
 /* weather carousal setting */
 .slick-arrow, .slick-next, .slick-prev{
-  display: none !important;
+  /* display: none !important; */
+  
 }
 
 /* Accordion  */

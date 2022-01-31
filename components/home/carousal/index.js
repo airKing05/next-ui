@@ -6,15 +6,24 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function ImagesCarousel() {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         autoplaySpeed: 4000,
         autoplay: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 600,
+              settings: {
+                dots: true
+              }
+            },
+            
+          ]
     };
     return (
-        <div className="container mb-5 pb-5 text-center" style={{ padding: '0px !important' }}>
+        <div className="mb-5 pb-5 text-center" style={{ padding: '0px ' }}>
         <div>
             <Slider {...settings}>
                 <div>
