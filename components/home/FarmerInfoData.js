@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const InfoData = () => {
+const FarmerInfoData = () => {
     return (
         <div className='container mt-0 text-center border' style={{padding: '', maxWidth: '100%'}}>
             <h1 className='h1-heading-1'>
@@ -47,4 +47,4 @@ const InfoData = () => {
     )
 }
 
-export default InfoData;
+export default FarmerInfoData;
