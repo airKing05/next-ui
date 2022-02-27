@@ -4,7 +4,7 @@ import FeatureList from '../../../images/feature-list.png';
 
 const FeatureInfo = () =>{
     return (
-        <div className='container-fluid my-5'>
+        <div className='container-fluid my-5 pb-5 pb-md-0'>
             <div className='row bg-light' style={{height: '400px'}}>
                 <div className='col-md-7  py-5 px-5'>
                     <h2 className='h1-heading-2 color-1'>See On Dekho Krashak</h2>

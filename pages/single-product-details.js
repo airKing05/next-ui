@@ -6,7 +6,6 @@ import SingleProductDetails from '../components/singleProductDetails'
 export default function singleProductDetails() {
     return (
         <div>
-            <Navbar/>
             <SingleProductDetails/>
         </div>
     )

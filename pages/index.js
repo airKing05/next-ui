@@ -11,9 +11,7 @@ export default function Home() {
         <title>Dekho Krashak</title>
         <meta name="google" content="nositelinkssearchbox" />
       </Head>
-      <Navbar />
       <HomePage/>
-      <Footer/>
     </div>
   )
 }

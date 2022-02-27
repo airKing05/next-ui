@@ -3,6 +3,8 @@ import Head from 'next/Head';
 import ThemeButton from '../components/darkTheme/ThemeButton';
 import {Provider} from 'react-redux';
 import store from '../redux/store';
+import Navbar from '../components/Navbar';
+import Footer from '../components/footer';
 
 
 function MyApp({ Component, pageProps }) {
@@ -29,9 +31,11 @@ function MyApp({ Component, pageProps }) {
           integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
           crossOrigin="anonymous"></script>
       </Head>
-      {/* <ThemeButton /> */}
-      <Component {...pageProps} />
 
+      {/* <ThemeButton /> */}
+      <Navbar/>
+      <Component {...pageProps} />
+      <Footer/>
 
     </Provider>
   )
