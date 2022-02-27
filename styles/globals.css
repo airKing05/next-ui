@@ -165,7 +165,7 @@ a {
 }
 
 .nav-link:hover{
-  color: #ed743e;
+  color: #ed743e !important;
   font-weight: 700;
 }
 

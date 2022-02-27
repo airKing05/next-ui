@@ -1,13 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
-import SingleProductImg from '../images/single-product-image-1.jpg';
+import { useRouter } from 'next/router';
+import SingleProductImg from '../../images/single-product-image-1.jpg';
 
-function PriceList() {
+function productsList() {
+    const router = useRouter();
+    console.log(router.query)
+    const [date, state, city, mandiName, product, singleProduct] = router.query.singleProduct || [];
+    console.log(router.query, date)
     return (
-        <div className="container mt-5 py-5" style={{ background: '#2222' }}>
+        <div className="container mt-5 py-5" >
             <h1 className="d-flex justify-content-center"> See the Best price of Your Crop</h1>
-
             <form className="d-flex justify-content-center my-5">
                 <div class=" row">
                     <div class="form-group col-md-4">
@@ -25,7 +29,7 @@ function PriceList() {
                         <input type="text" class="form-control" id="inputCity" />
                     </div>
                     <div className="col-md-4 mt-4">
-                        <button type="submit" class="btn btn-success">See the Price</button>
+                        <button type="submit" class="btn" style={{ background: '#ed743e', color: '#ffffff' }}>See the Price</button>
                     </div>
 
                 </div>
@@ -53,12 +57,16 @@ function PriceList() {
                     <tbody>
                         <tr>
                             <th scope="row" rowSpan="4">1</th>
-                            <td rowSpan="4">Wheat</td>
+                            <td rowSpan="4">
+                                Wheat
+                                </td>
                             <td>
-                                <Link href='/single-product-details'><a>Laster</a></Link>
+                                <Link href={`/products-list/${date}/${state}/${city}/${mandiName}/${product}/${singleProduct}`}>
+                                    <a>Laster</a>
+                                </Link>
                             </td>
                             <td className="">
-                                <Link href='/single-product-details'>
+                                <Link href={`/products-list/${date}/${state}/${city}/${mandiName}/${product}/${singleProduct}`}>
                                     <a>
                                         <Image src={SingleProductImg}  layout="responsive" alt="single-product-image"/>
                                      {/* <img src="https://cdn.pixabay.com/photo/2011/08/17/12/52/wheat-8762__340.jpg" style={{ maxWidth: '150px', maxHeight: '150px' }}></img> */}
@@ -159,4 +167,4 @@ function PriceList() {
     )
 }
 
-export default PriceList;
+export default productsList;

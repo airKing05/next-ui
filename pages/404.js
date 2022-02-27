@@ -15,7 +15,6 @@ function PageNoteFound() {
     }, [])
     return (
         <>
-        <Navbar/>
         <div className="container py-2" style={{maxWidth: '400px', background: '#888888', marginTop: '20%'}}>
             <div className="row mt-3 text-center">
                 <div className="col-2 d-flex justify-content-end">404</div>
