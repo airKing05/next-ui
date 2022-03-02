@@ -6,9 +6,9 @@ import SingleProductImg from '../../images/single-product-image-1.jpg';
 
 function productsList() {
     const router = useRouter();
-    console.log(router.query)
+    // console.log(router.query)
     const [date, state, city, mandiName, product, singleProduct] = router.query.singleProduct || [];
-    console.log(router.query, date)
+    // console.log(router.query, date)
     return (
         <div className="container mt-5 py-5" >
             <h1 className="d-flex justify-content-center"> See the Best price of Your Crop</h1>

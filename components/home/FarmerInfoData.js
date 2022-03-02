@@ -10,15 +10,15 @@ const FarmerInfoData = () => {
             <div className='row mb-2' style={{padding: '0px'}}>
                 <div className='col-md-3 mb-3'>
                     <div className='row'>
-                        <span className='h1-heading-1 color-1'>25<label className='h1-heading-4'>M+</label></span>
+                        <span className='h1-heading-1 color-1'>70<label className='h1-heading-4'>%</label></span>
                     </div>
                     <div className='row'>
-                        <span className='h1-heading-6 color-21'>Dependent On Agriculture</span>
+                        <span className='h1-heading-6 color-21'>Rural households are depend on agriculture</span>
                     </div>
                 </div>
                 <div className='col-md-3 mb-3'>
                     <div className='row'>
-                        <span className='h1-heading-1 color-1'>~2.5<label className='h1-heading-4'>Acr</label></span>
+                        <span className='h1-heading-1 color-1'>~1.37<label className='h1-heading-4'>Hectares</label></span>
                     </div>
                     <div className='row'>
                         <span className='h1-heading-6  color-21'>Avg. Agricultural land hold one farmer's family</span>
@@ -26,7 +26,7 @@ const FarmerInfoData = () => {
                 </div>
                 <div className='col-md-3 mb-3'>
                     <div className='row'>
-                        <span className='h1-heading-1 color-1'> ~₹1<label className='h1-heading-4'>Lakh</label></span>
+                        <span className='h1-heading-1 color-1'> ~₹80<label className='h1-heading-4'>K</label></span>
                     </div>
                     <div className='row'>
                         <span className='h1-heading-6  color-21'>Annual income of farmer</span>

@@ -3,7 +3,7 @@ import DetailsCard from './DetailsCard'
 
 export default function DayAccordion() {
     return (
-        <div className='container'>
+        <div className='container' style={{marginBottom: '150px'}}>
             <h4 className='w-heading-4'>15 Days forecast</h4>
             <div class="accordion accordion-flush" id="accordionFlushExample" >
                 <div class="accordion-item">

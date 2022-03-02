@@ -5,14 +5,16 @@ import FarmerInfoData from './FarmerInfoData';
 import TimeToChange from './TimetoChange';
 import CropInfoData from './CropInfoData';
 import FeatureInfo from './feature';
+import AgriDependentOn from './AgriDependentOn';
 
 const HomePage = () => {
     return (
         <>
           <Carousal/>
           <FarmerInfoData/>
-          <TimeToChange/>
+          <AgriDependentOn/>
           <CropInfoData/>
+          <TimeToChange/>
           <FeatureInfo/>
             {/* <div className="container mt-5 text-center" style={{maxWidth: '100%', background: '#555555' }}>
                 
