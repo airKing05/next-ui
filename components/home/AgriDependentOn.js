@@ -10,7 +10,7 @@ export default function AgriDependentOn() {
         <div className='container border bg-light mt-5' style={{ maxWidth: '100%', zIndex: '1' }}>
             <h3 className='h1-heading-3 text-center mt-3'>Indian Agriculture <span className='color-1'>essentially dependent on</span></h3>
             <div className="row my-5 mx-5 pb-4">
-                <div className='col-md-4 pt-5'>
+                <div className='col-md-4 pt-5 mb-5 mb-md-0'>
                     <div className='card-de bg-white'>
                         <div className='text-center card-de-img-top'>
                             <Image src={Monsoon} className="rounded" layout="responsive" alt='monsoon-img' />
@@ -29,7 +29,7 @@ export default function AgriDependentOn() {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-4 pt-5'>
+                <div className='col-md-4 pt-5 mb-5 mb-md-0'>
                     <div className='card-de bg-white'>
                         <div className='text-center card-de-img-top'>
                             <Image src={MarketDependent} className="rounded" layout="responsive" alt='market-dependent-img' />

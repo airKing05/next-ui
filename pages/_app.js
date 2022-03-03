@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
       {/* <ThemeButton /> */}
       <Navbar/>
       <Component {...pageProps} />
-      {/* <Footer/> */}
+      <Footer/>
 
     </Provider>
   )
