@@ -35,7 +35,7 @@ function productsList() {
                 </div>
             </form>
             <div className="d-flex text-center table-responsive-lg" style={{ maxWidth: '800px', whiteSpace: 'nowrap', margin: '0 auto' }}>
-                <table class="table table-striped table-dark table-fixed " cellspacing="0">
+                <table class="table table-striped table-hover table-fixed table-bordered" cellspacing="0">
                     <thead className="">
                         <tr>
                             <th scope="col" rowSpan="2">#</th>

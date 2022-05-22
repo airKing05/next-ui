@@ -18,6 +18,7 @@ function PriceList() {
                             <option>Gujrat</option>
                             <option>MadhyPradesh</option>
                             <option>Hariyana</option>
+                            <option>Punjab</option>
                         </select>
                     </div>
                     <div class="form-group col-md-4">
@@ -31,7 +32,7 @@ function PriceList() {
                 </div>
             </form>
             <div className="d-flex text-center table-responsive-lg" style={{ maxWidth: '800px', whiteSpace: 'nowrap', margin: '0 auto' }}>
-                <table class="table table-striped table-dark table-fixed " cellspacing="0">
+                <table class="table table-striped table-fixed table-hover" cellspacing="0">
                     <thead className="">
                         <tr>
                             <th scope="col" rowSpan="2">#</th>
