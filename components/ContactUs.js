@@ -50,7 +50,7 @@ export default function Contact() {
             <div className="container cont pb-4" style={{ maxWidth: '700px', marginTop: '100px', marginBottom: '100px' }}>
                 <div className="row px-5 pt-5  pb-3">
                     <div className="col">
-                        <h2 className="h2 d-flex justify-content-center justify-content-md-start">Ask your Quarry</h2>
+                        <h2 className="h2 d-flex justify-content-center justify-content-md-start">Get in touch with us</h2>
                     </div>
                 </div>
                 <div className="row px-5 pb-4">

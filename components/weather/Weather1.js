@@ -3,8 +3,12 @@ import Snow1 from '../../images/snow-1.jpg'
 import HourlyCarousal from './hourlyForecast';
 import DayCarousal from './dayForecast';
 import DayAccordion from './dayAccordion';
+import { useSelector } from 'react-redux';
 
 export default function Weather1() {
+    const weatherData = useSelector((state) => state.weatherState);
+    console.log(weatherData);
+
     return (
         <div className='container mb-5 mt-3 text-center w-bg' style={{}}>
             <div className='row'>
@@ -12,7 +16,7 @@ export default function Weather1() {
                     <input className='border-0' placeholder='search by city or village' style={{padding:'10px 15px', borderTopLeftRadius:'8px', borderBottomLeftRadius:'8px'}}/>
                     <button className='border-0 bg-info bg-opacity-10' style={{padding:'10px 25px', borderTopRightRadius:'8px', borderBottomRightRadius:'8px'}}>Go</button>
 
-                    <h2 className='w-heading-1 mt-4'>Kunhari, Kota (Raj)</h2>
+                    <h2 className='w-heading-1 mt-4'>Kunhari, Kota (Raj) {weatherData[0]} </h2>
                 </div>
             </div>
 
