@@ -71,6 +71,7 @@ a {
 .sm-img-icon{
   width: 40px;
   height: auto;
+  
 }
 .sm-col{
   padding-right: 0px !important;
@@ -84,9 +85,9 @@ a {
 /* weather section */
 
 .w-bg{
-  background-image:url(https://bit.ly/314H0tM);
+  /* background-image:url(https://bit.ly/314H0tM); */
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
 }
 .w-heading-1{
   font-size: 30px;
@@ -110,9 +111,106 @@ a {
   font-weight: 800;
 }
 
+
+/* home page css */
+.h1-heading-1{
+  font-size: 50px;
+  font-weight: 900;
+}
+.h1-heading-2{
+  font-size: 35px;
+  font-weight: 900;
+}
+.h1-heading-3{
+  font-size: 30px;
+  font-weight: 900;
+}
+.h1-heading-4{
+  font-size: 25px;
+  font-weight: 900;
+}
+.h1-heading-6{
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.p-text-1{
+  font-size: 25px;
+  font-weight: 500;
+}
+.p-text-4{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* color code css */
+.color-1{
+  color: #ed743e;
+}
+.color-2{
+  color:  #646a7c;
+}
+.color-21{
+  color:  #42435d;
+}
+.color-f{
+  color:  #ffffff;
+}
+
+
+/* navbar edit */
+.nav-link{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-link:hover{
+  color: #ed743e !important;
+  font-weight: 700;
+}
+
+
+/* card-de in home page agridependent on */
+
+.card-de{
+  position: relative;
+  height: 300px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: .3s;
+  padding: 30px 20px;
+  border-radius: 5px;
+  z-index: 99;
+}
+.card-de:hover{
+  height: 520px;
+}
+.card-de-img-top{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 5px;
+  z-index: 99;
+  transition: .3s;
+}
+.card-de:hover> .card-de-img-top{
+ transform: translateY(-90px);
+}
+.card-de-body{
+  transform: translateY(-300px);
+  opacity: 0;
+  transition: .5s;
+  z-index: -1;
+}
+.card-de:hover> .card-de-body{
+  opacity: 1;
+  transform: translateY(-320px);
+}
+
+
 /* weather carousal setting */
 .slick-arrow, .slick-next, .slick-prev{
-  display: none !important;
+  /* display: none !important; */
+  
 }
 
 /* Accordion  */

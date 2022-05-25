@@ -5,10 +5,10 @@ import ThemeButton from './darkTheme/ThemeButton';
 export default function Navbar() {
     return (
         <>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div className="container-fluid">
           <Link href="/">
-          <a className="navbar-brand" >Krashak</a>
+          <a className="navbar-brand" >Dekho Krashak</a>
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -16,7 +16,7 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mr-auto" >
               <li className="nav-item">
-                <Link  href="/listing">
+                <Link  href="/products-list">
                 <a className="nav-link">Listing</a>
                 </Link>
               </li>

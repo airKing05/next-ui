@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 import Snow1 from '../../images/snow-1.jpg'
 import HourlyCarousal from './hourlyForecast';
 import DayCarousal from './dayForecast';
@@ -54,6 +55,7 @@ export default function Weather1() {
                 <div className='col'>
                 {/* <img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves" width="250" /> */}
                 <img src="https://bit.ly/3Js4daA" alt="this slowpoke moves" width="250" maxHeight="250" style={{backgroundSize: 'cover'}}/>
+                
                 </div>
             </div>
             
@@ -72,7 +74,7 @@ export default function Weather1() {
             </div>
 
             {/* 15 day forecast */}
-            <div className='row mb-3'>
+            <div className='row'>
                 <div className='col'>
                     <DayAccordion/>
                 </div>

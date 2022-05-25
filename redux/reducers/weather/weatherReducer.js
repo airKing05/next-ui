@@ -3,7 +3,7 @@ import { GET_WEATHER_DATA } from "../../constants/weather/weatherActionType";
 // action creater
 
 const weatherInitialState = [
-25, 20
+"weather is clear now ", "foggy"
 ];
 
 export const  getWeatherDataReducer = (state = weatherInitialState, action) => {
