@@ -6,7 +6,7 @@ import Logo2 from '../../images/logo-2.png';
 
 const Footer = () => {
     return (
-        <div className="container bg-info" style={{ maxWidth: '100%',  }}>
+        <div className="container bg-info fixed-bottom" style={{ maxWidth: '100%', }}>
             <div className="row d-flex pt-3 px-5 mb-3">
                 <div className="col-md-6 mb-4 mb-md-0" >
                     <div className="row d-flex justify-content-center " style={{ maxWidth: '200px', height: '50px' }}>
