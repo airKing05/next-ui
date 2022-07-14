@@ -193,7 +193,7 @@ function productsList() {
                             <td className="">
                                 <img src="https://cdn.pixabay.com/photo/2016/07/28/19/42/rice-1549130__340.jpg" style={{ maxWidth: '150px', maxHeight: '150px' }} />
                             </td>
-                            <td>2150</td>
+                            <td>2151</td>
                             <td>2170</td>
                             {/* <td className="d-none d-md-block">
                                 <img src="https://cdn.pixabay.com/photo/2016/07/28/19/42/rice-1549130__340.jpg" style={{ maxWidth: '150px', maxHeight: '150px' }} />
