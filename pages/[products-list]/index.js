@@ -1,14 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from "next/image";
 import { useRouter } from 'next/router';
 import SingleProductImg from '../../images/single-product-image-1.jpg';
 
 function productsList() {
+    const [marketData, setMarketData] = useState();
     const router = useRouter();
     // console.log(router.query)
     const [date, state, city, mandiName, product, singleProduct] = router.query.singleProduct || [];
     // console.log(router.query, date)
+
+    // connecting to nodejs
+    function getMarketData() {
+        fetch('http://localhost:5000/api/product/market-details')
+            .then(res => res.json())
+            .then(result => {
+                console.log(result)
+                // .product_category
+                setMarketData(result)
+            })
+            .catch(err => console.log(err))
+    }
+
+    useEffect(() => {
+        getMarketData()
+    }, [])
+
     return (
         <div className="container mt-5 py-5" >
             <h1 className="d-flex justify-content-center"> See the Best price of Your Crop</h1>
@@ -44,22 +62,21 @@ function productsList() {
                             <th className="" scope="col" rowSpan="2" ><span className='text-wrap '>Crop Image</span></th>
                             {/* <th scope="col" rowSpan="1" className="d-none d-md-block" >Crop Image</th> */}
                             {/* <th scope="col" colSpan="2">Price according to th Cities / Date</th> */}
-                            <th scope="row" colSpan="2"><span className='text-wrap' style={{width:'100%', float:'left'}}>kota(Raj.), 30/10/21</span></th>
+                            <th scope="row" colSpan="2"><span className='text-wrap' style={{ width: '100%', float: 'left' }}>Kota(Raj.), 30/10/21</span></th>
                             {/* <th scope="col" rowSpan="2" className="d-none d-md-block" >Crop Image</th> */}
 
                         </tr>
 
                         <tr>
-                            <td><span  className='text-wrap'>Minimum</span></td>
+                            <td><span className='text-wrap'>Minimum</span></td>
                             <td>Maximum</td>
                         </tr>
                     </thead>
                     <tbody>
+
                         <tr>
                             <th scope="row" rowSpan="4">1</th>
-                            <td rowSpan="4">
-                                Wheat
-                                </td>
+                            <td rowSpan="4">Wheat</td>
                             <td>
                                 <Link href={`/products-list/${date}/${state}/${city}/${mandiName}/${product}/${singleProduct}`}>
                                     <a>Laster</a>
@@ -68,8 +85,8 @@ function productsList() {
                             <td className="">
                                 <Link href={`/products-list/${date}/${state}/${city}/${mandiName}/${product}/${singleProduct}`}>
                                     <a>
-                                        <Image src={SingleProductImg}  layout="responsive" alt="single-product-image"/>
-                                     {/* <img src="https://cdn.pixabay.com/photo/2011/08/17/12/52/wheat-8762__340.jpg" style={{ maxWidth: '150px', maxHeight: '150px' }}></img> */}
+                                        <Image src={SingleProductImg} layout="responsive" alt="single-product-image" />
+                                        {/* <img src="https://cdn.pixabay.com/photo/2011/08/17/12/52/wheat-8762__340.jpg" style={{ maxWidth: '150px', maxHeight: '150px' }}></img> */}
                                     </a>
                                 </Link>
                             </td>
@@ -121,6 +138,30 @@ function productsList() {
                             </td> */}
 
                         </tr>
+
+{/* include dynamic data here  */}
+{
+   marketData && marketData.map((item) => {
+        <tr >
+            {item._id}
+            <th scope="row" rowSpan="4">2</th>
+            <td rowSpan="4">{item.market_name}</td>
+            <td>Sugandha</td>
+            <td className="">
+                <img src="https://cdn.pixabay.com/photo/2021/10/10/11/14/ch-6696389_960_720.jpg" style={{ maxWidth: '150px', maxHeight: '150px' }} />
+            </td>
+            <td>1600</td>
+            <td>1690</td>
+            {/* <td className="d-none d-md-block">
+                                <img src="https://cdn.pixabay.com/photo/2021/10/10/11/14/ch-6696389_960_720.jpg" style={{ maxWidth: '150px', maxHeight: '150px' }} />
+                            </td> */}
+
+        </tr>
+    })
+}
+
+
+
                         <tr>
                             <th scope="row" rowSpan="4">2</th>
                             <td rowSpan="4">Dhan</td>
