@@ -80,9 +80,22 @@ a {
 .h7{
   font-weight: 500;
 }
+/* contact page css pickup form the user data 123 */
 
 
 /* weather section */
+/* custom css for input box and search btn*/
+.custom-from-control:focus, .custom-from-control:hover {
+  box-shadow: none;
+}
+
+.custom-search-btn:hover{
+  transition: ease-out;
+  transform: scale(1.1);
+  cursor: pointer;
+  /* color: #ed743e !important; */
+}
+/* custom css for input box and search btn*/
 
 .w-bg{
   /* background-image:url(https://bit.ly/314H0tM); */
@@ -110,6 +123,7 @@ a {
   font-size: 10px;
   font-weight: 800;
 }
+/* weather section */
 
 
 /* home page css */
@@ -142,7 +156,9 @@ a {
   font-size: 20px;
   font-weight: 400;
 }
+/* home page css */
 
+/* mos useful color code */
 /* color code css */
 .color-1{
   color: #ed743e;
@@ -156,9 +172,11 @@ a {
 .color-f{
   color:  #ffffff;
 }
+/* color code css */
 
 
-/* navbar edit */
+/* navbar css */
+/* custom css for navbar  */
 .nav-link{
   font-size: 18px;
   font-weight: 500;
@@ -168,6 +186,7 @@ a {
   color: #ed743e !important;
   font-weight: 700;
 }
+/* navbar css */
 
 
 /* card-de in home page agridependent on */

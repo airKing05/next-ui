@@ -5,7 +5,8 @@ import {Provider} from 'react-redux';
 import store from '../redux/store';
 import Navbar from '../components/Navbar';
 import Footer from '../components/footer';
-
+// import UilReact from '@iconscout/react-unicons/icons/uil-react'
+import * as Unicons from '@iconscout/react-unicons';
 
 function MyApp({ Component, pageProps }) {
 

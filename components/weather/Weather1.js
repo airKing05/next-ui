@@ -5,46 +5,64 @@ import HourlyCarousal from './hourlyForecast';
 import DayCarousal from './dayForecast';
 import DayAccordion from './dayAccordion';
 import { useSelector } from 'react-redux';
+import { UilSearch, UilLocationPoint, UilSun, UilSunset, UilMoon, UilMoonset, UilTemperature, UilWind, UilCloudShowers, UilEye } from '@iconscout/react-unicons'
 
 export default function Weather1() {
     const weatherData = useSelector((state) => state.weatherState);
     console.log(weatherData);
 
     return (
-        <div className='container mb-5 mt-3 text-center w-bg' style={{}}>
+        <div className='container mb-5 pt-5 mt-3 text-center w-bg' >
             <div className='row'>
-                <div className='col py-3'>
-                    <input className='border-0' placeholder='search by city or village' style={{padding:'10px 15px', borderTopLeftRadius:'8px', borderBottomLeftRadius:'8px'}}/>
-                    <button className='border-0 bg-info bg-opacity-10' style={{padding:'10px 25px', borderTopRightRadius:'8px', borderBottomRightRadius:'8px'}}>Go</button>
-
-                    <h2 className='w-heading-1 mt-4'>Kunhari, Kota (Raj) {weatherData[0]} </h2>
+                <div className='col-10 py-3 d-flex justify-content-center'>
+                    <input 
+                    className='border form-control  custom-from-control text-capitalize' 
+                    placeholder='search by city | village...' 
+                    style={{padding:'10px 15px', borderTopLeftRadius:'8px', borderBottomLeftRadius:'8px', maxWidth:'400px'}}/>
+                    <span 
+                    style={{ padding: '10px 15px' }}>
+                    <UilSearch size={25} 
+                    className="custom-search-btn" />
+                    <UilLocationPoint size={25}
+                    className="custom-search-btn " style={{marginLeft: '10px'}} /> 
+                    </span>
+                </div>
+                <div className='col-2' style={{ padding: '15px 35px', fontSize: '25px' }}>
+                    <span>°C</span> <span>|</span> <span>°F</span>
+                </div>
+            </div>
+            <div className='row'>
+                <div className='col'>
+                    <h2 className='w-heading-1 mt-4'> Kunhari, Kota (Raj) {weatherData[0]}
+                    </h2>
+                    
                 </div>
             </div>
 
             <div className='row'> 
                 <div className='col'>
                     <h4 className='w-heading-4'>
-                        <span>Dec 26 &nbsp;</span>
-                        <span>Sunday &nbsp;</span>
-                        <span>23:58 &nbsp;</span>
+                        <span>Sunday&#44;&nbsp;</span>
+                        <span>26&#44; December&#44;2021&nbsp;&#124;&nbsp;</span>
+                        <span>Local Time: 23:58 &nbsp;</span>
                     </h4>
                     <div className='row mx-md-4 mt-5' >
                         <div className='col-7 w-text-3 text-start'>
-                            <div className='mb-md-1'>Temp 25 &#8451;</div>
-                            <div className='mb-md-1'>Wind 8 KM/Hr, <span>From South East</span></div>
-                            <div className='mb-md-2'>Visibility 16 KM</div>
-                            <div className='mb-md-2'>Rain Possibility 60%</div>
+                            <div className='mb-md-1'><UilTemperature/> Temp 25 &#8451;</div>
+                            <div className='mb-md-1'><UilWind/> Wind 8 KM/Hr, <span>From South East</span></div>
+                            <div className='mb-md-2'><UilEye/> Visibility 16 KM</div>
+                            <div className='mb-md-2'><UilCloudShowers/> Rain Possibility 60%</div>
                         </div>
                         <div className='col-5 w-text-3 text-end '>
                             <div className='row d-md-inline-block mb-md-4'>
-                                <span className=''>rise 7:40 <span className='w-text-6'>AM</span></span>
-                                <span>icon</span>
+                                <span className=''>  rise 7:40 <span className='w-text-6'>AM</span></span>
+                                <span><UilSun /></span>
                                 <span>sun-set 5:49 <span className='w-text-6'>PM</span></span>
                             </div>
                             <div className='row d-md-inline-block'>
-                                <span>rise 8:00 <span className='w-text-6'>PM</span></span>
-                                <span>icon</span>
-                                <span>sun-set 6:55 <span className='w-text-6'>AM</span></span>
+                                <span> rise 8:00 <span className='w-text-6'>PM</span></span>
+                                <span><UilMoon /></span>
+                                <span> moon-set 6:55 <span className='w-text-6'>AM</span></span>
                             </div>
                         </div>
                     </div>
