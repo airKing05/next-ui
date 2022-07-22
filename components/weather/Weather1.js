@@ -5,16 +5,23 @@ import HourlyCarousal from './hourlyForecast';
 import DayCarousal from './dayForecast';
 import DayAccordion from './dayAccordion';
 import { useSelector } from 'react-redux';
-import { UilSearch, UilLocationPoint, UilSun, UilSunset, UilMoon, UilMoonset, UilTemperature, UilWind, UilCloudShowers, UilEye } from '@iconscout/react-unicons'
+import { UilSearch, UilLocationPoint, UilSun, UilMoon, UilTemperature, UilWind, UilCloudShowers, UilEye } from '@iconscout/react-unicons'
+import getFormattedWeatherData from './services/weatherService';
 
 export default function Weather1() {
     const weatherData = useSelector((state) => state.weatherState);
     console.log(weatherData);
 
+    // api work
+    const fetchWeather = async () =>{
+        const data = await getFormattedWeatherData({q: 'delhi'});
+        console.log(data);
+    }
+    fetchWeather();
     return (
         <div className='container mb-5 pt-5 mt-3 text-center w-bg' >
             <div className='row'>
-                <div className='col-10 py-3 d-flex justify-content-center'>
+                <div className='col py-3 d-flex justify-content-center'>
                     <input 
                     className='border form-control  custom-from-control text-capitalize' 
                     placeholder='search by city | village...' 
@@ -27,15 +34,12 @@ export default function Weather1() {
                     className="custom-search-btn " style={{marginLeft: '10px'}} /> 
                     </span>
                 </div>
-                <div className='col-2' style={{ padding: '15px 35px', fontSize: '25px' }}>
-                    <span>°C</span> <span>|</span> <span>°F</span>
-                </div>
+                
             </div>
             <div className='row'>
                 <div className='col'>
                     <h2 className='w-heading-1 mt-4'> Kunhari, Kota (Raj) {weatherData[0]}
                     </h2>
-                    
                 </div>
             </div>
 
@@ -46,6 +50,9 @@ export default function Weather1() {
                         <span>26&#44; December&#44;2021&nbsp;&#124;&nbsp;</span>
                         <span>Local Time: 23:58 &nbsp;</span>
                     </h4>
+                    <div className='' style={{ padding: '15px 35px', fontSize: '25px' }}>
+                        <span>°C</span> <span>|</span> <span>°F</span>
+                    </div>
                     <div className='row mx-md-4 mt-5' >
                         <div className='col-7 w-text-3 text-start'>
                             <div className='mb-md-1'><UilTemperature/> Temp 25 &#8451;</div>

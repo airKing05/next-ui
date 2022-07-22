@@ -1,5 +1,6 @@
 import React from 'react'
-import DetailsCard from './DetailsCard'
+import DetailsCard from './DetailsCard';
+import { UilClouds } from '@iconscout/react-unicons'
 
 export default function DayAccordion() {
     return (
@@ -10,7 +11,7 @@ export default function DayAccordion() {
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style={{ background: '' }}>
                             <span className='w-heading-5' style={{padding: '0px !important'}}>Today</span>
-                            <span className=''>weather-icon</span>
+                            <span className=''><UilClouds/></span>
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
